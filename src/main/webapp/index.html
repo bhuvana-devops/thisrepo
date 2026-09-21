@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Shopping Store</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#f5f5f5;
+            text-align:center;
+        }
+
+        .product{
+            width:300px;
+            margin:40px auto;
+            padding:20px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        button{
+            background:green;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Simple Shopping Website</h1>
+
+<div class="product">
+    <h2>Wireless Mouse</h2>
+    <p>Price: ₹799</p>
+
+    <button onclick="addToCart()">
+        Add to Cart
+    </button>
+</div>
+
+<p id="message"></p>
+
+<script>
+function addToCart(){
+    document.getElementById("message").innerHTML =
+        "Item added to cart successfully!";
+}
+</script>
+
+</body>
+</html>
